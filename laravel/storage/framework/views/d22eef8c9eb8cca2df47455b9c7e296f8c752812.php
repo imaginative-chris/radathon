@@ -1,3 +1,6 @@
+<?php
+    $brand = App\Brand::whereHandle(config('app.brand'))->first();
+?>
 <?php $__env->startSection('content'); ?>
 <div class="container">
     <div class="row justify-content-center">
@@ -13,7 +16,7 @@
                         </div>
                     <?php endif; ?>
 
-                    <?php echo e(__('airship.welcome', ['username' => Auth::user()->name])); ?>
+                    <?php echo e(__('airship.welcome', ['username' => Auth::user()->name])); ?> <?php echo e(__('to')); ?> <?php echo e($brand->name); ?>
 
                 </div>
             </div>
