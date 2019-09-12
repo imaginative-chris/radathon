@@ -1,3 +1,6 @@
+<?php
+$brand = App\Brand::whereHandle(config('app.brand'))->first();
+?>
 <!DOCTYPE html>
 <html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
 <head>
@@ -79,11 +82,11 @@
                 <div class="top-menu">
                     <img src="<?php echo e(URL::to("img/" . config('app.brand') . '.png')); ?>" alt="" class="brand-img">
                     <div class="items">
-                        <?php if(config('app.brand') == 'sanofi'): ?>
-                            <p class="item" >Sanofi manage</p>
-                        <?php endif; ?>
                         <p class="item">Message Board</p>
                         <p class="item">Helpdesk</p>
+                            <?php if(($user = Auth::user()) && $user->name == 'Max Splendour'): ?>
+                                <p class="item" ><?php echo e($brand->name); ?> reports</p>
+                            <?php endif; ?>
                     </div>
                 </div>
             </div>

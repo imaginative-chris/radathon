@@ -1,3 +1,6 @@
+@php
+$brand = App\Brand::whereHandle(config('app.brand'))->first();
+@endphp
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -77,11 +80,11 @@
                 <div class="top-menu">
                     <img src="{{ URL::to("img/" . config('app.brand') . '.png') }}" alt="" class="brand-img">
                     <div class="items">
-                        @if(config('app.brand') == 'sanofi')
-                            <p class="item" >Sanofi manage</p>
-                        @endif
                         <p class="item">Message Board</p>
                         <p class="item">Helpdesk</p>
+                            @if(($user = Auth::user()) && $user->name == 'Max Splendour')
+                                <p class="item" >{{ $brand->name }} reports</p>
+                            @endif
                     </div>
                 </div>
             </div>

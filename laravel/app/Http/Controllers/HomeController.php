@@ -28,10 +28,10 @@ class HomeController extends Controller
     {
         //end user to diff place depending on something
 
-        if(Auth::user()->events){
+        if(Auth::user()->events->count()){
             return view('landing');
         } else {
-            return view('modules');
+            return $this->modules();
         }
     }
 
