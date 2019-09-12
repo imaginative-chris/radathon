@@ -74,10 +74,15 @@
 
         <main class="py-4">
             <div class="basic-branding">
-                <img src="{{ resource_path("img/" . config('app.brand') . '.png') }}" alt="" class="brand-img">
                 <div class="top-menu">
-                    <p class="item">Message Board</p>
-                    <p class="item">Helpdesk</p>
+                    <img src="{{ URL::to("img/" . config('app.brand') . '.png') }}" alt="" class="brand-img">
+                    <div class="items">
+                        @if(config('app.brand') == 'sanofi')
+                            <p class="item" >Sanofi manage</p>
+                        @endif
+                        <p class="item">Message Board</p>
+                        <p class="item">Helpdesk</p>
+                    </div>
                 </div>
             </div>
             @yield('content')

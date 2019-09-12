@@ -76,10 +76,15 @@
 
         <main class="py-4">
             <div class="basic-branding">
-                <img src="<?php echo e(resource_path("img/" . config('app.brand') . '.png')); ?>" alt="" class="brand-img">
                 <div class="top-menu">
-                    <p class="item">Message Board</p>
-                    <p class="item">Helpdesk</p>
+                    <img src="<?php echo e(URL::to("img/" . config('app.brand') . '.png')); ?>" alt="" class="brand-img">
+                    <div class="items">
+                        <?php if(config('app.brand') == 'sanofi'): ?>
+                            <p class="item" >Sanofi manage</p>
+                        <?php endif; ?>
+                        <p class="item">Message Board</p>
+                        <p class="item">Helpdesk</p>
+                    </div>
                 </div>
             </div>
             <?php echo $__env->yieldContent('content'); ?>

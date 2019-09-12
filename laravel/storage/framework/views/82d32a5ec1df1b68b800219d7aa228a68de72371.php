@@ -21,7 +21,7 @@
                             </div></a>
 
                         <a href="<?php echo e(URL::to('/events')); ?>"><div class="card events">
-                            Events
+                            Live Events and Courses
                             </div></a>
 
                         <a href="<?php echo e(URL::to('/events')); ?>"><div class="card resources">

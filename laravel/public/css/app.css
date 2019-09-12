@@ -10657,17 +10657,27 @@ a.text-dark:focus {
 }
 
 .top-menu {
-  width: 40%;
-  text-align: right;
+  width: 760px;
   margin: 0 auto;
+  position: relative;
+  text-align: right;
+  height: 80px;
 }
 
 .top-menu .brand-img {
+  position: absolute;
   display: inline-block;
   left: 0;
+  max-width: 300px;
 }
 
-.top-menu .item {
+.top-menu .items {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+}
+
+.top-menu .items .item {
   display: inline-block;
   margin-left: 50px;
 }
@@ -10696,6 +10706,20 @@ a.text-dark:focus {
 }
 
 .brand-bausch .modules-container .module .module-title {
+  top: 64px;
+  position: relative;
+}
+
+.brand-sanofi .modules-container .module {
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 20px;
+  background-color: #bdbd00;
+}
+
+.brand-sanofi .modules-container .module .module-title {
   top: 64px;
   position: relative;
 }
