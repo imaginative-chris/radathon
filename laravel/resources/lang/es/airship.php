@@ -1,5 +1,6 @@
 <?php
 
 return [
-    'welcome' => 'Bienvenido :username'
+    'welcome' => 'Bienvenido :username',
+    'reports' => 'Informes :brand'
 ];

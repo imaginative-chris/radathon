@@ -79,13 +79,15 @@ $brand = App\Brand::whereHandle(config('app.brand'))->first();
             <div class="basic-branding">
                 <div class="top-menu">
                     <img src="{{ URL::to("img/" . config('app.brand') . '.png') }}" alt="" class="brand-img">
+                    @auth
                     <div class="items">
-                        <p class="item">Message Board</p>
-                        <p class="item">Helpdesk</p>
+                        <p class="item">{{ __('Message Board') }}</p>
+                        <p class="item">{{ __('Helpdesk') }}</p>
                             @if(($user = Auth::user()) && $user->name == 'Max Splendour')
-                                <p class="item" >{{ $brand->name }} reports</p>
+                                <p class="item" >{{ __('airship.reports', ['brand' => $brand->name]) }} </p>
                             @endif
                     </div>
+                    @endauth
                 </div>
             </div>
             @yield('content')

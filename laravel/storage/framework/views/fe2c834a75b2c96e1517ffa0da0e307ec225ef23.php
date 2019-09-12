@@ -1,3 +1,6 @@
+<?php
+$brand = App\Brand::whereHandle(config('app.brand'))->first();
+?>
 <!DOCTYPE html>
 <html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
 <head>
@@ -19,7 +22,7 @@
     <!-- Styles -->
     <link href="<?php echo e(asset('css/app.css')); ?>" rel="stylesheet">
 </head>
-<body>
+<body class="brand-<?php echo e(config('app.brand')); ?>">
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
@@ -75,6 +78,20 @@
         </nav>
 
         <main class="py-4">
+            <div class="basic-branding">
+                <div class="top-menu">
+                    <img src="<?php echo e(URL::to("img/" . config('app.brand') . '.png')); ?>" alt="" class="brand-img">
+                    <?php if(auth()->guard()->check()): ?>
+                    <div class="items">
+                        <p class="item"><?php echo e(__('Message Board')); ?></p>
+                        <p class="item"><?php echo e(__('Helpdesk')); ?></p>
+                            <?php if(($user = Auth::user()) && $user->name == 'Max Splendour'): ?>
+                                <p class="item" ><?php echo e(__('airship.reports', ['brand' => $brand->name])); ?> </p>
+                            <?php endif; ?>
+                    </div>
+                    <?php endif; ?>
+                </div>
+            </div>
             <?php echo $__env->yieldContent('content'); ?>
         </main>
     </div>
