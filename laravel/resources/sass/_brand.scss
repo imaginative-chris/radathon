@@ -1,3 +1,8 @@
+.col-md-8 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .card-container {
   display: inline-block;
   width: 728px;
@@ -12,6 +17,7 @@
 .top-menu {
   width: 760px;
   margin: 0 auto;
+    padding: 0 20px;
   position: relative;
   text-align: right;
   height: 80px;
@@ -19,7 +25,7 @@
     position: absolute;
     display: inline-block;
     left: 0;
-    max-width: 300px;
+    max-width: 220px;
   }
   .items {
     position: absolute;
@@ -28,6 +34,7 @@
     .item {
       display: inline-block;
       margin-left: 50px;
+      font-size:90%;
     }
   }
 }

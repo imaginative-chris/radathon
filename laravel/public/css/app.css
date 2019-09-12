@@ -10644,6 +10644,11 @@ a.text-dark:focus {
   }
 }
 
+.col-md-8 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .card-container {
   display: inline-block;
   width: 728px;
@@ -10659,6 +10664,7 @@ a.text-dark:focus {
 .top-menu {
   width: 760px;
   margin: 0 auto;
+  padding: 0 20px;
   position: relative;
   text-align: right;
   height: 80px;
@@ -10668,7 +10674,7 @@ a.text-dark:focus {
   position: absolute;
   display: inline-block;
   left: 0;
-  max-width: 300px;
+  max-width: 220px;
 }
 
 .top-menu .items {
@@ -10680,6 +10686,7 @@ a.text-dark:focus {
 .top-menu .items .item {
   display: inline-block;
   margin-left: 50px;
+  font-size: 90%;
 }
 
 .modules-container {
