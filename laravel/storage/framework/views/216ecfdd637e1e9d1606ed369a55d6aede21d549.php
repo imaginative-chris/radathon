@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header"><?php echo e(__('Modules')); ?></div>
+                <div class="card card-main">
+                    
 
                     <div class="card-body">
                         <?php if(session('status')): ?>

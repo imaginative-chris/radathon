@@ -6,7 +6,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card card-main">
-                    <div class="card-header">Dashboard</div>
+                    <div class="card-header">{{ __('Welcome to Airship') }}</div>
 
                     <div class="card-body">
                         @if (session('status'))
@@ -15,7 +15,6 @@
                             </div>
                         @endif
 
-                        You are logged in, and at the landing page
                     </div>
                     <div class="card-container">
                         <a href="{{ URL::to('/modules') }}"><div class="card modules">

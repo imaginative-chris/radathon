@@ -8,7 +8,7 @@
     'asset_url' => NULL,
     'timezone' => 'UTC',
     'locale' => 'es',
-    'brand' => 'sanofi',
+    'brand' => 'bausch',
     'fallback_locale' => 'en',
     'faker_locale' => 'en_US',
     'key' => 'base64:PQMi/OnhdSDyEnXq1vowwGq4HnjT88ld6acSMUyj2qE=',

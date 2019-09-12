@@ -14,6 +14,18 @@
   }
 }
 
+.card-main {
+  background: none !important;
+  border: none !important;
+  .card-body {
+    margin-top: 50px;
+  }
+  .card-header {
+    background-color: transparent;
+  }
+}
+
+
 .top-menu {
   width: 760px;
   margin: 0 auto;
@@ -62,7 +74,7 @@
       border-radius: 50%;
       display: inline-block;
       text-align: center;
-      margin-right: 20px;
+      margin-right: 28px;
       background-color: #00aca1;
       .module-title {
         top: 64px;
@@ -93,6 +105,9 @@
 }
 
 .brand-bausch {
+  .card-header {
+    border-bottom: 1px solid #0099b1;
+  }
   .navbar {
     background-color: #0099b1;
     .navbar-brand {
@@ -109,7 +124,7 @@
       border-radius: 50%;
       display: inline-block;
       text-align: center;
-      margin-right: 20px;
+      margin-right: 28px;
       background-color: #0099b1;
       .module-title {
         top: 64px;
@@ -128,6 +143,15 @@
         position: relative;
         font-weight: bold;
         font-size: 14px;
+      }
+      &.events {
+        background-image: url(../img/bl1.png);
+      }
+      &.resources {
+        background-image: url(../img/bl2.png);
+      }
+      &.modules {
+        background-image: url(../img/bl3.png);
       }
     }
   }
@@ -149,7 +173,7 @@
       width: 150px;
       display: inline-block;
       text-align: center;
-      margin-right: 20px;
+      margin-right: 28px;
       background-color: #bdbd00;
       .module-title {
         top: 64px;

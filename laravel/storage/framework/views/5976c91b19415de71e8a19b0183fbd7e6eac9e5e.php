@@ -81,13 +81,15 @@ $brand = App\Brand::whereHandle(config('app.brand'))->first();
             <div class="basic-branding">
                 <div class="top-menu">
                     <img src="<?php echo e(URL::to("img/" . config('app.brand') . '.png')); ?>" alt="" class="brand-img">
+                    <?php if(auth()->guard()->check()): ?>
                     <div class="items">
-                        <p class="item">Message Board</p>
-                        <p class="item">Helpdesk</p>
+                        <p class="item"><?php echo e(__('Message Board')); ?></p>
+                        <p class="item"><?php echo e(__('Helpdesk')); ?></p>
                             <?php if(($user = Auth::user()) && $user->name == 'Max Splendour'): ?>
-                                <p class="item" ><?php echo e($brand->name); ?> reports</p>
+                                <p class="item" ><?php echo e(__('airship.reports', ['brand' => $brand->name])); ?> </p>
                             <?php endif; ?>
                     </div>
+                    <?php endif; ?>
                 </div>
             </div>
             <?php echo $__env->yieldContent('content'); ?>

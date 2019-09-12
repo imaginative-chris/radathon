@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Dashboard</div>
+                <div class="card card-main">
+                    <div class="card-header"><?php echo e(__('Welcome to Airship')); ?></div>
 
                     <div class="card-body">
                         <?php if(session('status')): ?>
@@ -13,7 +13,6 @@
                             </div>
                         <?php endif; ?>
 
-                        You are logged in, and at the landing page
                     </div>
                     <div class="card-container">
                         <a href="<?php echo e(URL::to('/modules')); ?>"><div class="card modules">
