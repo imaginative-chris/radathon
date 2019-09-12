@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    {{ __('airship.welcome', ['username' => Auth::user()->name]) }}
                 </div>
             </div>
         </div>
