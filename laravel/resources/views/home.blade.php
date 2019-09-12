@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@php
+    $brand = App\Brand::whereHandle(config('app.brand'))->first();
+@endphp
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -14,7 +16,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    {{ __('airship.welcome', ['username' => Auth::user()->name]) }} {{ __('to') }} {{ $brand->name }}
                 </div>
             </div>
         </div>
