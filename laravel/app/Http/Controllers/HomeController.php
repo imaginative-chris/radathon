@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
+    private $user;
+
     /**
      * Create a new controller instance.
      *
@@ -25,8 +27,8 @@ class HomeController extends Controller
     public function index()
     {
         //end user to diff place depending on something
-        $user = Auth::user();
-        if($user->events){
+
+        if(Auth::user()->events){
             return view('landing');
         } else {
             return view('modules');
@@ -35,7 +37,7 @@ class HomeController extends Controller
 
     public function modules()
     {
-        return view('modules');
+        return view('modules', ['courses' => Auth::user()->courses]);
     }
 
     public function events()

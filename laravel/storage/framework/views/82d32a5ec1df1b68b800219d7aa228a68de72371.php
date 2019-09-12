@@ -15,14 +15,19 @@
 
                         You are logged in, and at the landing page
                     </div>
+                    <div class="card-container">
+                        <a href="<?php echo e(URL::to('/modules')); ?>"><div class="card modules">
+                            Modules
+                            </div></a>
 
-                    <a href="<?php echo e(URL::to('/modules')); ?>"><div class="button">
-                        Modules
-                        </div></a>
+                        <a href="<?php echo e(URL::to('/events')); ?>"><div class="card events">
+                            Events
+                            </div></a>
 
-                    <a href="<?php echo e(URL::to('/events')); ?>"><div class="button">
-                        Events
-                        </div></a>
+                        <a href="<?php echo e(URL::to('/events')); ?>"><div class="card resources">
+                            Resources
+                            </div></a>
+                    </div>
                 </div>
             </div>
         </div>

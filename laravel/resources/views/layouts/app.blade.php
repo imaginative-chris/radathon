@@ -73,6 +73,13 @@
         </nav>
 
         <main class="py-4">
+            <div class="basic-branding">
+                <img src="{{ resource_path("img/" . config('app.brand') . '.png') }}" alt="" class="brand-img">
+                <div class="top-menu">
+                    <p class="item">Message Board</p>
+                    <p class="item">Helpdesk</p>
+                </div>
+            </div>
             @yield('content')
         </main>
     </div>

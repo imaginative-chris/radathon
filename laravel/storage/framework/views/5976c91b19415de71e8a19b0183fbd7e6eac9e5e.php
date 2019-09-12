@@ -19,7 +19,7 @@
     <!-- Styles -->
     <link href="<?php echo e(asset('css/app.css')); ?>" rel="stylesheet">
 </head>
-<body>
+<body class="brand-<?php echo e(config('app.brand')); ?>">
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
@@ -75,6 +75,13 @@
         </nav>
 
         <main class="py-4">
+            <div class="basic-branding">
+                <img src="<?php echo e(resource_path("img/" . config('app.brand') . '.png')); ?>" alt="" class="brand-img">
+                <div class="top-menu">
+                    <p class="item">Message Board</p>
+                    <p class="item">Helpdesk</p>
+                </div>
+            </div>
             <?php echo $__env->yieldContent('content'); ?>
         </main>
     </div>

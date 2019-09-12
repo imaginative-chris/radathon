@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Dashboard</div>
+                    <div class="card-header">{{ __('Modules') }}</div>
 
                     <div class="card-body">
                         @if (session('status'))
@@ -14,7 +14,11 @@
                             </div>
                         @endif
 
-                        You are logged in, and at the modules page
+                        <div class="modules-container">
+                            @foreach($courses as $course)
+                                <div class="module"><p class="module-title">{{ $course->title }}</p></div>
+                            @endforeach
+                        </div>
                     </div>
                 </div>
             </div>

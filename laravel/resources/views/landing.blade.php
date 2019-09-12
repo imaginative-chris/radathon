@@ -17,14 +17,19 @@
 
                         You are logged in, and at the landing page
                     </div>
+                    <div class="card-container">
+                        <a href="{{ URL::to('/modules') }}"><div class="card modules">
+                            Modules
+                            </div></a>
 
-                    <a href="{{ URL::to('/modules') }}"><div class="button">
-                        Modules
-                        </div></a>
+                        <a href="{{ URL::to('/events') }}"><div class="card events">
+                            Live Events and Courses
+                            </div></a>
 
-                    <a href="{{ URL::to('/events') }}"><div class="button">
-                        Events
-                        </div></a>
+                        <a href="{{ URL::to('/events') }}"><div class="card resources">
+                            Resources
+                            </div></a>
+                    </div>
                 </div>
             </div>
         </div>

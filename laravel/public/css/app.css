@@ -10644,11 +10644,59 @@ a.text-dark:focus {
   }
 }
 
+.card-container {
+  display: inline-block;
+  width: 728px;
+}
+
+.card-container .card {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+.top-menu {
+  width: 40%;
+  text-align: right;
+  margin: 0 auto;
+}
+
+.top-menu .brand-img {
+  display: inline-block;
+  left: 0;
+}
+
+.top-menu .item {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.modules-container {
+  display: inline-block;
+  width: 728px;
+}
+
 .brand-radical .app .navbar _ {
   background-color: blue;
 }
 
-.brand-bausch .app .navbar _ {
+.brand-bausch .navbar _ {
   background-color: turquoise;
+}
+
+.brand-bausch .modules-container .module {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin-right: 20px;
+  background-color: #0099b1;
+}
+
+.brand-bausch .modules-container .module .module-title {
+  top: 64px;
+  position: relative;
 }
 
