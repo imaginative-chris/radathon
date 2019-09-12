@@ -7,7 +7,8 @@
     'url' => 'http://localhost',
     'asset_url' => NULL,
     'timezone' => 'UTC',
-    'locale' => 'en',
+    'locale' => 'es',
+    'brand' => 'radical',
     'fallback_locale' => 'en',
     'faker_locale' => 'en_US',
     'key' => 'base64:PQMi/OnhdSDyEnXq1vowwGq4HnjT88ld6acSMUyj2qE=',
@@ -206,7 +207,7 @@
       array (
         'driver' => 'dynamodb',
         'key' => '',
-        'secret' => '',
+        'secret' => 'rrd',
         'region' => 'us-east-1',
         'table' => 'cache',
         'endpoint' => NULL,
@@ -325,7 +326,7 @@
       array (
         'driver' => 's3',
         'key' => '',
-        'secret' => '',
+        'secret' => 'rrd',
         'region' => 'us-east-1',
         'bucket' => '',
         'url' => NULL,
@@ -466,7 +467,7 @@
       array (
         'driver' => 'sqs',
         'key' => '',
-        'secret' => '',
+        'secret' => 'rrd',
         'prefix' => 'https://sqs.us-east-1.amazonaws.com/your-account-id',
         'queue' => 'your-queue-name',
         'region' => 'us-east-1',
@@ -501,7 +502,7 @@
     'ses' => 
     array (
       'key' => '',
-      'secret' => '',
+      'secret' => 'rrd',
       'region' => 'us-east-1',
     ),
     'sparkpost' => 

@@ -1,5 +1,5 @@
 .gitignore
-/node_modules
+laravel/node_modules
 /storage
 /vendor
 /.idea

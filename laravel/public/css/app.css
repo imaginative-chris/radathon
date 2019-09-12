@@ -10644,3 +10644,11 @@ a.text-dark:focus {
   }
 }
 
+.brand-radical .app .navbar _ {
+  background-color: blue;
+}
+
+.brand-bausch .app .navbar _ {
+  background-color: turquoise;
+}
+
