@@ -39,16 +39,61 @@
 }
 
 .brand-radical {
-  .app {
-    .navbar _{
-      background-color: blue;
+  .navbar {
+    background-color: #00aca1;
+    .navbar-brand {
+      color: white !important;
+    }
+    .nav-link {
+      color: white !important;
+    }
+  }
+  .modules-container {
+    .module {
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      margin-right: 20px;
+      background-color: #00aca1;
+      .module-title {
+        top: 64px;
+        position: relative;
+      }
+    }
+  }
+  .card-container {
+    .card {
+      border-radius: 10%;
+      background-color: #00aca1;
+      color: black;
+      text-align: center;
+      p {
+        top: 84px;
+        position: relative;
+        font-weight: bold;
+        font-size: 14px;
+      }
+      &.events {
+        background-color: #f5e941;
+      }
+      &.resources {
+        background-color: #e94c47;
+      }
     }
   }
 }
 
 .brand-bausch {
-  .navbar _{
-    background-color: turquoise;
+  .navbar {
+    background-color: #0099b1;
+    .navbar-brand {
+      color: white !important;
+    }
+    .nav-link {
+      color: white !important;
+    }
   }
   .modules-container {
     .module {
@@ -65,9 +110,32 @@
       }
     }
   }
+  .card-container {
+    .card {
+      border-radius: 10%;
+      background-color: #0099b1;
+      color: white;
+      text-align: center;
+      p {
+        top: 84px;
+        position: relative;
+        font-weight: bold;
+        font-size: 14px;
+      }
+    }
+  }
 }
 
 .brand-sanofi {
+  .navbar {
+    background-color: #bdbd00;
+    .navbar-brand {
+      color: black !important;
+    }
+    .nav-link {
+      color: black !important;
+    }
+  }
   .modules-container {
     .module {
       height: 150px;
@@ -79,6 +147,20 @@
       .module-title {
         top: 64px;
         position: relative;
+      }
+    }
+  }
+  .card-container {
+    .card {
+      border-radius: 10%;
+      background-color: #bdbd00;
+      color: white;
+      text-align: center;
+      p {
+        top: 84px;
+        position: relative;
+        font-weight: bold;
+        font-size: 14px;
       }
     }
   }

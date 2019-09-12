@@ -24,7 +24,7 @@ $brand = App\Brand::whereHandle(config('app.brand'))->first();
 </head>
 <body class="brand-<?php echo e(config('app.brand')); ?>">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="<?php echo e(url('/')); ?>">
                     <?php echo e(config('app.name', 'Laravel')); ?>

@@ -17,15 +17,15 @@
                     </div>
                     <div class="card-container">
                         <a href="<?php echo e(URL::to('/modules')); ?>"><div class="card modules">
-                            Modules
+                                <p>Modules</p>
                             </div></a>
 
                         <a href="<?php echo e(URL::to('/events')); ?>"><div class="card events">
-                            Live Events and Courses
+                                <p>Live Events and Courses</p>
                             </div></a>
 
                         <a href="<?php echo e(URL::to('/events')); ?>"><div class="card resources">
-                            Resources
+                                <p>Resources</p>
                             </div></a>
                     </div>
                 </div>

@@ -10687,12 +10687,65 @@ a.text-dark:focus {
   width: 728px;
 }
 
-.brand-radical .app .navbar _ {
-  background-color: blue;
+.brand-radical .navbar {
+  background-color: #00aca1;
 }
 
-.brand-bausch .navbar _ {
-  background-color: turquoise;
+.brand-radical .navbar .navbar-brand {
+  color: white !important;
+}
+
+.brand-radical .navbar .nav-link {
+  color: white !important;
+}
+
+.brand-radical .modules-container .module {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin-right: 20px;
+  background-color: #00aca1;
+}
+
+.brand-radical .modules-container .module .module-title {
+  top: 64px;
+  position: relative;
+}
+
+.brand-radical .card-container .card {
+  border-radius: 10%;
+  background-color: #00aca1;
+  color: black;
+  text-align: center;
+}
+
+.brand-radical .card-container .card p {
+  top: 84px;
+  position: relative;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.brand-radical .card-container .card.events {
+  background-color: #f5e941;
+}
+
+.brand-radical .card-container .card.resources {
+  background-color: #e94c47;
+}
+
+.brand-bausch .navbar {
+  background-color: #0099b1;
+}
+
+.brand-bausch .navbar .navbar-brand {
+  color: white !important;
+}
+
+.brand-bausch .navbar .nav-link {
+  color: white !important;
 }
 
 .brand-bausch .modules-container .module {
@@ -10710,6 +10763,32 @@ a.text-dark:focus {
   position: relative;
 }
 
+.brand-bausch .card-container .card {
+  border-radius: 10%;
+  background-color: #0099b1;
+  color: white;
+  text-align: center;
+}
+
+.brand-bausch .card-container .card p {
+  top: 84px;
+  position: relative;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.brand-sanofi .navbar {
+  background-color: #bdbd00;
+}
+
+.brand-sanofi .navbar .navbar-brand {
+  color: black !important;
+}
+
+.brand-sanofi .navbar .nav-link {
+  color: black !important;
+}
+
 .brand-sanofi .modules-container .module {
   height: 150px;
   width: 150px;
@@ -10722,5 +10801,19 @@ a.text-dark:focus {
 .brand-sanofi .modules-container .module .module-title {
   top: 64px;
   position: relative;
+}
+
+.brand-sanofi .card-container .card {
+  border-radius: 10%;
+  background-color: #bdbd00;
+  color: white;
+  text-align: center;
+}
+
+.brand-sanofi .card-container .card p {
+  top: 84px;
+  position: relative;
+  font-weight: bold;
+  font-size: 14px;
 }
 
