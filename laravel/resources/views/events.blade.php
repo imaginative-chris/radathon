@@ -1,6 +1,5 @@
 @extends('layouts.app')
 
-
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
@@ -15,16 +14,8 @@
                             </div>
                         @endif
 
-                        You are logged in, and at the landing page
+                        You are logged in, and at the events page
                     </div>
-
-                    <a href="{{ URL::to('/modules') }}"><div class="button">
-                        Modules
-                        </div></a>
-
-                    <a href="{{ URL::to('/events') }}"><div class="button">
-                        Events
-                        </div></a>
                 </div>
             </div>
         </div>

@@ -33,8 +33,15 @@ class HomeController extends Controller
         }
     }
 
-    public function goToView($view)
+    public function modules()
     {
-        return view($view);
+        return view('modules');
     }
+
+    public function events()
+    {
+        return view('events');
+    }
+
+
 }

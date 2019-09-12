@@ -13,20 +13,12 @@
                             </div>
                         <?php endif; ?>
 
-                        You are logged in, and at the landing page
+                        You are logged in, and at the modules page
                     </div>
-
-                    <a href="<?php echo e(URL::to('/modules')); ?>"><div class="button">
-                        Modules
-                        </div></a>
-
-                    <a href="<?php echo e(URL::to('/events')); ?>"><div class="button">
-                        Events
-                        </div></a>
                 </div>
             </div>
         </div>
     </div>
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\xampp\htdocs\projects\radathon\laravel\resources\views/landing.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\xampp\htdocs\projects\radathon\laravel\resources\views/modules.blade.php ENDPATH**/ ?>
